@@ -77,7 +77,7 @@ Para a entrada `2d20+4+2`:
   - Dado 2: rola 10, soma +6 = 16
 - **Saída**: `15+4+2 = 21 | 10+4+2 = 16`
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Java**: Linguagem principal.
 - **Scanner**: Para entrada do usuário.
