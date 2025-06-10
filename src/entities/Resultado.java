@@ -30,7 +30,7 @@ public class Resultado {
         // a primeira parte sempre contém os dados (exemplo "1d8")
         String dadosParte1 = partes[0].trim();
 
-        // calcula a soma dos bônus adicionais, todos numeros após o primeiro "+"
+        // calcula a soma dos bônus adicionais (todo número após o primeiro "+")
         int extraSoma = 0;
         StringBuilder extraSomaString = new StringBuilder();
 
