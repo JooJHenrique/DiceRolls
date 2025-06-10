@@ -31,10 +31,6 @@ Resultado: 87+10 = 97
 
 ## Como Executar
 
-### Pré-requisitos
-- Java 8 ou superior
-- IDE de sua preferência (IntelliJ IDEA, Eclipse, VS Code, etc.)
-
 ### Passos para executar
 
 1. **Clone o repositório**
@@ -53,12 +49,16 @@ Resultado: 87+10 = 97
    java application.RolagemDados
    ```
 
-4. **Use o sistema**
+4. **Utilize o sistema**
    - Digite sua rolagem no formato `XdY+Z` onde:
      - `X` = número de dados
      - `Y` = número de lados do dado
      - `Z` = bônus adicional (opcional)
    - Digite `sair` para encerrar
+  
+### Pré-requisitos
+- Java 8 ou superior
+- IDE de sua preferência (IntelliJ IDEA, Eclipse, VS Code, etc.)
 
 ## Como Funciona
 
@@ -76,13 +76,6 @@ Para a entrada `2d20+4+2`:
   - Dado 1: rola 15, soma +6 = 21
   - Dado 2: rola 10, soma +6 = 16
 - **Saída**: `15+4+2 = 21 | 10+4+2 = 16`
-
-## Casos de Uso
-
-- **RPG de Mesa**: D&D, Pathfinder...
-- **Jogos Online**: Sistemas de combate, loot drops...
-- **Simulações**: Testes probabilísticos, eventos aleatórios.
-- **Educação**: Ensino de probabilidade e estatística.
 
 ## 🛠️ Tecnologias Utilizadas
 
