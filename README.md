@@ -8,7 +8,7 @@ Um sistema simples para rolagem de dados em Java, ideal para jogos de RPG e outr
 - **Diferentes tipos de dados**: Suporte para dados com qualquer número de lados (d4, d6, d8, d12, d20, d100, etc.)
 - **Bônus adicionais**: Adicione modificadores aos dados (Por exemplo: `1d20+4+2`)
 - **Resultados individuais**: Cada dado é mostrado separadamente
-- **Interface interativa**: Continue rolando até digitar "sair"
+- **Interface interativa**: Continue rolando até digitar "parar"
 
 ## Exemplos de Uso
 
@@ -54,7 +54,7 @@ Resultado: 87+10 = 97
      - `X` = número de dados
      - `Y` = número de lados do dado
      - `Z` = bônus adicional (opcional)
-   - Digite `sair` para encerrar
+   - Digite `parar` para encerrar
   
 ### Pré-requisitos
 - Java 8 ou superior
