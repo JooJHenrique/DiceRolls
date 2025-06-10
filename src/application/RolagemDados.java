@@ -26,7 +26,7 @@ public class RolagemDados {
             // chama o metodo para interpretar os dados e obter o resultado
             Resultado resultado = interpretacaoDosDados(rolagem, random);
 
-            // exibi o resultado da rolagem
+            // exibe o resultado da rolagem
             System.out.println("Resultado: " + resultado.getCalc());
             System.out.println();
         }
