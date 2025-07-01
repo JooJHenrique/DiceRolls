@@ -19,8 +19,7 @@ public class Resultado {
     public Integer getTotal() {
         return total;
     }
-
-    // metodo estático principal que interpreta a expressão dos dados
+    
     public static Resultado interpretacaoDosDados(String expressao, Random random) {
 
         // divide a expressão pelos sinais de "+" para separar os dados e bônus
@@ -34,11 +33,10 @@ public class Resultado {
         int extraSoma = 0;
         StringBuilder extraSomaString = new StringBuilder();
 
-        // loop para processar cada bônus (indice 1 em diante)
         for (int i = 1; i < partes.length; i++) {
             int valor = Integer.parseInt(partes[i].trim());
-            extraSoma += valor; // soma para cálculo
-            extraSomaString.append("+").append(valor); // string para exibição
+            extraSoma += valor;
+            extraSomaString.append("+").append(valor);
         }
 
         // separa a quantidade de dados do tipo de dado
@@ -47,10 +45,8 @@ public class Resultado {
         int numDados = Integer.parseInt(dadosParte2[0]); // quantidade de dados
         int ladoDados = Integer.parseInt(dadosParte2[1]); // lados dos dados
 
-        // string pra armazenar o resultado final
         String resultado = "";
 
-        // loop para rolar cada dado individualmente
         for (int i = 0; i < numDados; i++) {
 
             // rola um dado (1 até o número de lados)
@@ -59,17 +55,16 @@ public class Resultado {
             // calcula o total individual (valor do dado + bônus)
             int totalIndividual = rolar + extraSoma;
 
-            // monta a string do cálculo individual
+            // monta a string do calculo individual
             String calcIndividual = String.valueOf(rolar);
             if (extraSoma > 0) {
-                calcIndividual += extraSomaString.toString(); // adiciona os bônus
+                calcIndividual += extraSomaString.toString();
             }
 
             // adiciona o resultado individual ao resultado final
             // ex formato: "8+3+2 = 13"
             resultado += calcIndividual + " = " + totalIndividual;
 
-            // adiciona separador "|" entre os dados
             if (i < numDados - 1) {
                 resultado += " | ";
             }
