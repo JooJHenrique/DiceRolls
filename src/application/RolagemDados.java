@@ -14,19 +14,15 @@ public class RolagemDados {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        // loop infinito até o usuário digitar "parar" pra finalizar o programa
         while (true) {
             String rolagem = sc.nextLine();
 
-            // verifica se o usuário quer finalizar o programa, ignora maiúscula e minúscula
             if (rolagem.equalsIgnoreCase("parar")) {
                 break;
             }
 
-            // chama o metodo para interpretar os dados e obter o resultado
             Resultado resultado = interpretacaoDosDados(rolagem, random);
 
-            // exibe o resultado da rolagem
             System.out.println("Resultado: " + resultado.getCalc());
             System.out.println();
         }
